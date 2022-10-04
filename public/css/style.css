@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 64px;
+  letter-spacing: -0.5px;
+  line-height: 72px;
+}
+
+h2 {
+  font-size: 40px;
+  letter-spacing: -0.2px;
+  line-height: 44px;
+}
+
+h3 {
+  font-size: 32px;
+  letter-spacing: -0.2px;
+  line-height: 40px;
+}
+
+h4 {
+  font-size: 24px;
+  letter-spacing: -0.2px;
+  line-height: 32px;
+}
+
+h5 {
+  font-size: 20px;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+}
+
+h6 {
+  font-size: 18px;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+}
+
+.body-lg {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.body-lg-bold {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.body-md {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.body-md-medium {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.25px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.body-md-semibold {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.25px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.txt-btn {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.overline {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.overline-bold {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.link {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.input {
+  border-radius: 5px;
+  border: solid 1.5px #d2d2d9;
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  height: 48px;
+  letter-spacing: 0px;
+  line-height: 16px;
+  padding: 16px;
+  transition: 0.3s;
+  width: 350px;
+}
+.input.input-disabled {
+  background-color: #f0f0f2;
+  border-color: #d2d2d9;
+}
+.input.input-validate + .clue {
+  height: fit-content;
+}
+.input.input-validate:invalid {
+  border-color: #ea005a;
+}
+.input.input-validate:invalid + .clue {
+  color: #ea005a;
+}
+.input.input-validate:valid {
+  border-color: #00eabd;
+}
+.input.icon-user {
+  display: block;
+  position: relative;
+}
+.input.icon-user::after {
+  content: "oie";
+}
+.input:hover {
+  border-color: #adadb2;
+}
+.input:focus {
+  border-color: #5168f4;
+  outline: none !important;
+}
+.input:focus:invalid + .clue {
+  height: fit-content;
+  opacity: 1;
+}
+.input::placeholder,
+.input .input-placeholder {
+  color: #adadb2;
+  opacity: 1;
+}
+
+.input-label {
+  color: #606066;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 16px;
+}
+
+.input-icon {
+  position: absolute;
+  right: 17px;
+  top: 38px;
+}
+
+.clue {
+  color: #939399;
+  font-size: 11px;
+  font-weight: 500;
+  height: 0;
+  letter-spacing: -0.25px;
+  line-height: 16px;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.6s;
+}
+
+.button {
+  border-radius: 5px;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  height: fit-content;
+  min-width: 350px;
+  padding: 16px;
+  transition: 0.3s;
+}
+.button.button-primary, .button.button-primary-export, .button.button-outline-primary, .button.button-primary-export.btn-loading {
+  background-color: #5168f4;
+  box-shadow: #5168f4;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0em;
+}
+.button.button-primary:hover, .button.button-primary-export:hover, .button.button-outline-primary:hover {
+  background-color: #7d8efb;
+}
+.button.button-primary:active, .button.button-primary-export:active, .button.button-outline-primary:active {
+  background-color: #3e4daa;
+}
+.button.button-outline-primary, .button.button-primary-export.btn-loading {
+  background-color: #fafafa;
+  border: solid 1.5px;
+  color: #5168f4;
+}
+.button.button-outline-primary:hover, .button.button-primary-export.btn-loading:hover {
+  background-color: #fafafa;
+  color: #7d8efb;
+}
+.button.button-outline-primary:active, .button.button-primary-export.btn-loading:active {
+  color: #3e4daa;
+}
+.button.button-primary-export {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  justify-content: center;
+  min-width: 160px;
+}
+.button.btn-loading .btn-txt {
+  display: none;
+}
+.button.btn-loading .spinner-border-md {
+  display: block;
+}
+.button .spinner-border-md {
+  border-width: 2.5px;
+  display: none;
+  height: 20px;
+  width: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

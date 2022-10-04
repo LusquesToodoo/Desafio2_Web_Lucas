@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="/public/css/style.css">
+</head>
+
+<body>
+  <!-- inputs -->
+  <section class="all-container container-fluid bg-info d-flex justify-content-center">
+
+    <!-- input -->
+    <form action="" class="m-3">
+      <div class="">
+        <label class="form-label input-label mb-2 d-block">Label</label>
+        <input type="text" class="input" placeholder="placeholder" required>
+        <p class="clue mt-1">Dica ou erro</p>
+      </div>
+    </form>
+    <!--  -->
+
+    <!-- input 2 -->
+    <form action="" class="m-3">
+      <div class="">
+        <label class="form-label input-label">
+          <p class="mb-2">
+            Label
+          </p>
+          <input type="text" class="input mb-1" placeholder="placeholder" required>
+          <p class="clue m-0">Dica ou erro</p>
+        </label>
+      </div>
+    </form>
+    <!--  -->
+
+    <!-- input with icon-->
+    <form action="" class="m-3">
+      <div class="">
+        <label class="form-label input-label position-relative">
+          <p class="mb-2">
+            Label
+          </p>
+          <input type="text" class="input mb-1 pe-5 input-disabled" placeholder="placeholder" required>
+          <p class="clue m-0">Dica ou erro</p>
+          <figure class="input-icon">
+            <img src="/public/img/svg/user.svg" alt="user">
+          </figure>
+        </label>
+      </div>
+    </form>
+    <!--  -->
+
+    <!-- dropdown -->
+    <form action="" class="m-3">
+      <div class="">
+        <label class="form-label input-label mb-2 d-block">Label</label>
+        <select class="input input-disabled form-select shadow-none" id="inputGroupSelect01" required>
+          <option class="input-placeholder" value="" disabled="disabled" selected>
+            placeholder
+          </option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+    </form>
+    <!--  -->
+
+  </section>
+
+  <!-- buttons -->
+  <section class="all-container container-fluid bg-info d-flex justify-content-center">
+
+    <!-- button -->
+    <button type="button" class="button button-primary shadow-lg">
+      <span class="spinner-border spinner-border-md" role="status" aria-hidden="true"></span>
+      <span class="btn-txt">
+        Button
+      </span>
+    </button>
+    <!--  -->
+
+    <!-- button outline-->
+    <button type="button" class="button button-outline-primary shadow-lg">
+      <span class="spinner-border spinner-border-md" role="status" aria-hidden="true"></span>
+      <span class="btn-txt">
+        Button
+      </span>
+    </button>
+    <!--  -->
+
+    <!-- button small with icon-->
+    <button type="button" class="button button-primary-export shadow-lg py-2 px-4">
+      <span class="spinner-border spinner-border-md " role="status" aria-hidden="true"></span>
+      <span class="btn-txt d-flex align-items-center">
+        <span class="me-2">
+          <img src="/public/img/svg/arrow-export.svg" alt="export">
+        </span>
+        <span>
+          Exportar lista
+        </span>
+      </span>
+    </button>
+    <!--  -->
+
+  </section>
+
+
+
+  <script src="public/js/scripts.js" type="module" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
+</html>

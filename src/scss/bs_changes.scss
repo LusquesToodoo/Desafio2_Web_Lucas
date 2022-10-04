@@ -1,0 +1,43 @@
+body {
+  font-family: $font-inter;
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+h1 {
+  font-size: 64px;
+  letter-spacing: -0.5px;
+  line-height: 72px;
+}
+h2 {
+  font-size: 40px;
+  letter-spacing: -0.2px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 32px;
+  letter-spacing: -0.2px;
+  line-height: 40px;
+}
+h4 {
+  font-size: 24px;
+  letter-spacing: -0.2px;
+  line-height: 32px;
+}
+h5 {
+  font-size: 20px;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+}
+h6 {
+  font-size: 18px;
+  letter-spacing: -0.2px;
+  line-height: 24px;
+}

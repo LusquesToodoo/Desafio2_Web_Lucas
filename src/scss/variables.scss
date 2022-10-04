@@ -1,0 +1,33 @@
+// Typeface
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+// variables
+$font-inter: "Inter", sans-serif;
+$font-roboto: "Roboto", sans-serif;
+$txt-color-dark: #000;
+$txt-color-light: #fff;
+
+$color-primary-050: #f5f6ff;
+$color-primary-100: #b4befa;
+$color-primary-200: #a3aded;
+$color-primary-300: #7d8efb;
+$color-primary-400: #5168f4;
+$color-primary-500: #3e4daa;
+$color-primary-600: #262f6a;
+
+$color-gray-100: #f0f0f2;
+$color-gray-200: #d2d2d9;
+$color-gray-300: #adadb2;
+$color-gray-400: #939399;
+$color-gray-500: #606066;
+$color-gray-600: #494952;
+$color-gray-600: #161620;
+
+%alert-gradient {
+  background-image: linear-gradient(red, blue);
+}
+$alert-error: #ea005a;
+$alert-sucess-dark: #00cca3;
+$alert-sucess: #00eabd;
+$alert-warning-dark: #eb962f;
+$alert-warning: #fca232;
