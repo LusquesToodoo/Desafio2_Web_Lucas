@@ -107,7 +107,7 @@
   background-color: #ea005a;
 }
 
-.text-gray-error {
+.text-alert-error {
   color: #ea005a;
 }
 
@@ -115,7 +115,7 @@
   background-color: #00cca3;
 }
 
-.text-gray-sucess-dark {
+.text-alert-sucess-dark {
   color: #00cca3;
 }
 
@@ -123,7 +123,7 @@
   background-color: #00eabd;
 }
 
-.text-gray-sucess {
+.text-alert-sucess {
   color: #00eabd;
 }
 
@@ -131,7 +131,7 @@
   background-color: #eb962f;
 }
 
-.text-gray-warning-dark {
+.text-alert-warning-dark {
   color: #eb962f;
 }
 
@@ -139,7 +139,7 @@
   background-color: #fca232;
 }
 
-.text-gray-warning {
+.text-alert-warning {
   color: #fca232;
 }
 
@@ -219,6 +219,14 @@
   text-align: left;
 }
 
+.shadow-sm-hover:hover {
+  box-shadow: 0 0.125rem 0.25rem rgba(62, 77, 170, 0.2);
+}
+
+.shadow-lg-hover:hover {
+  box-shadow: 0 1rem 3rem rgba(62, 77, 170, 0.2);
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
@@ -269,6 +277,21 @@ h6 {
   font-size: 18px;
   letter-spacing: -0.2px;
   line-height: 24px;
+}
+
+.modal-dialog {
+  display: flex;
+  height: 100vh;
+}
+.modal-dialog .modal-content {
+  margin: auto;
+}
+.modal-dialog .modal-content .modal-body.check {
+  margin: auto;
+  max-width: 250px;
+}
+.modal-dialog .modal-content .icon {
+  font-size: 96px;
 }
 
 .input {
@@ -355,7 +378,6 @@ h6 {
   border: none;
   font-family: "Roboto", sans-serif;
   height: fit-content;
-  min-width: 350px;
   padding: 16px;
   transition: 0.3s;
 }
@@ -455,14 +477,6 @@ h6 {
 }
 .main button[type=submit] {
   margin-bottom: 107px;
-}
-
-.modal-dialog {
-  display: flex;
-  height: 100vh;
-}
-.modal-dialog .modal-content {
-  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

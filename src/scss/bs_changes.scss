@@ -41,3 +41,18 @@ h6 {
   letter-spacing: -0.2px;
   line-height: 24px;
 }
+
+.modal-dialog {
+  display: flex;
+  height: 100vh;
+  & .modal-content{
+    margin: auto;
+    & .modal-body.check{
+      margin: auto;
+      max-width: 250px;
+    }
+    & .icon{
+      font-size: 96px;
+    }
+  }
+}
