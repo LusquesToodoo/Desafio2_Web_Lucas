@@ -1,16 +1,97 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="public/css/style.css">
-  </head>
-  <body>
-    <section class="all-container container-fluid bg-danger">
-      oie
-    </section>
-    <script src="public/js/scripts.js" type="module" defer></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta author="https://github.com/Lusques">
+  <title>Toodoo ERM</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+
+<body>
+  <section class="all-container container-fluid p-0 d-lg-flex">
+
+    <header class="header d-flex align-items-center justify-content-center col-lg-7 p-0">
+      <section class="px-3">
+        <figure class="">
+          <img class="w-100" src="public/img/svg/index-illustration.svg" alt="">
+        </figure>
+        <h3 class="text-primary-500 text-center fw-semibold header-info">
+          Gerencie sua empresa em uma única plataforma
+        </h3>
+        <p class="text-center text-gray-300 text-body-lg">
+          Conheça o Toodoo ERM.
+        </p>
+      </section>
+    </header>
+
+    <main class="main col-lg-5">
+      <section class="form-container m-auto ms-lg-5 pe-5">
+        <div class="mb-4">
+          <figure class="form-logo-toodoo">
+            <img class="" src="public/img/png/logo_tooodoo.png" alt="logo-toodoo">
+          </figure>
+          <p class="text-gray-500 mb-1">
+            Seja bem-vindo!
+          </p>
+          <h2>
+            Faça login <br>
+            na sua conta
+          </h2>
+        </div>
+        <form action="">
+          <div class="mb-3 pb-2">
+            <label class="form-label input-label">
+              <p class="mb-2 text-gray-500">
+                Email*
+              </p>
+              <input type="email" class="input mb-1" placeholder="ex. johndoe@toodoo.com.br" required>
+              <p class="clue m-0">Dica ou erro</p>
+            </label>
+          </div>
+          <div class="">
+            <label class="form-label input-label">
+              <p class="mb-2 text-gray-400">
+                Senha*
+              </p>
+              <input type="password" class="input mb-1" placeholder="ao menos 8 caracteres" required>
+              <p class="clue m-0">Dica ou erro</p>
+            </label>
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="form-check p-0 m-0">
+              <input class="form-check-input d-none" type="checkbox" value="" id="remember">
+              <label class="form-check-label text-body-md d-flex align-items-center" for="remember">
+                <span class="input-box me-2 rounded-circle"></span>
+                <span class="text-gray-400">
+                  Lembrar
+                </span>
+              </label>
+            </div>
+            <a class="text-body-md text-gray-500 text-decoration-none" href="./public/pages/forgot_password.html">
+              Esqueceu a senha?
+            </a>
+          </div>
+          <button type="submit" class="button button-primary button-default shadow-sm mt-4">
+            <span class="spinner-border spinner-border-md" role="status" aria-hidden="true"></span>
+            <span class="btn-txt">
+              Entrar
+            </span>
+          </button>
+        </form>
+        <p class="text-center text-gray-400">
+          Precisa de ajuda? <a class="text-primary-400 text-decoration-none" href="#">Entre em contato.</a>
+        </p>
+
+      </section>
+    </main>
+
+  </section>
+  <script src="public/js/scripts.js" type="module" defer></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+
 </html>

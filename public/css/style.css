@@ -1,4 +1,224 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+.bg-primary-100 {
+  background-color: #b4befa;
+}
+
+.text-primary-100 {
+  color: #b4befa;
+}
+
+.bg-primary-200 {
+  background-color: #a3aded;
+}
+
+.text-primary-200 {
+  color: #a3aded;
+}
+
+.bg-primary-300 {
+  background-color: #7d8efb;
+}
+
+.text-primary-300 {
+  color: #7d8efb;
+}
+
+.bg-primary-400, .main .form-check input:checked + label .input-box {
+  background-color: #5168f4;
+}
+
+.text-primary-400, .main .form-check input:checked + label .input-box {
+  color: #5168f4;
+}
+
+.bg-primary-500 {
+  background-color: #3e4daa;
+}
+
+.text-primary-500 {
+  color: #3e4daa;
+}
+
+.bg-primary-600 {
+  background-color: #262f6a;
+}
+
+.text-primary-600 {
+  color: #262f6a;
+}
+
+.bg-gray-100 {
+  background-color: #f0f0f2;
+}
+
+.text-gray-100 {
+  color: #f0f0f2;
+}
+
+.bg-gray-200 {
+  background-color: #d2d2d9;
+}
+
+.text-gray-200, .main .form-check .input-box {
+  color: #d2d2d9;
+}
+
+.bg-gray-300 {
+  background-color: #adadb2;
+}
+
+.text-gray-300 {
+  color: #adadb2;
+}
+
+.bg-gray-400 {
+  background-color: #939399;
+}
+
+.text-gray-400, .main a.text-body-md:hover {
+  color: #939399;
+}
+
+.bg-gray-500 {
+  background-color: #606066;
+}
+
+.text-gray-500 {
+  color: #606066;
+}
+
+.bg-gray-600 {
+  background-color: #494952;
+}
+
+.text-gray-600 {
+  color: #494952;
+}
+
+.bg-gray-700 {
+  background-color: #161620;
+}
+
+.text-gray-700 {
+  color: #161620;
+}
+
+.bg-alert-error {
+  background-color: #ea005a;
+}
+
+.text-gray-error {
+  color: #ea005a;
+}
+
+.bg-alert-sucess-dark {
+  background-color: #00cca3;
+}
+
+.text-gray-sucess-dark {
+  color: #00cca3;
+}
+
+.bg-alert-sucess {
+  background-color: #00eabd;
+}
+
+.text-gray-sucess {
+  color: #00eabd;
+}
+
+.bg-alert-warning-dark {
+  background-color: #eb962f;
+}
+
+.text-gray-warning-dark {
+  color: #eb962f;
+}
+
+.bg-alert-warning {
+  background-color: #fca232;
+}
+
+.text-gray-warning {
+  color: #fca232;
+}
+
+.text-alert-gradient {
+  background-image: linear-gradient(red, blue);
+}
+
+.text-body-lg {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.text-body-lg-bold {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.text-body-md {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.text-body-md-medium {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.25px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.text-body-md-semibold {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.25px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.text-txt-btn {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.text-overline {
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.text-overline-bold {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 16px;
+  text-align: left;
+}
+
+.text-link {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 16px;
+  text-align: left;
+}
+
 body {
   font-family: "Inter", sans-serif;
 }
@@ -49,78 +269,6 @@ h6 {
   font-size: 18px;
   letter-spacing: -0.2px;
   line-height: 24px;
-}
-
-.body-lg {
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0px;
-  line-height: 24px;
-  text-align: left;
-}
-
-.body-lg-bold {
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0px;
-  line-height: 24px;
-  text-align: left;
-}
-
-.body-md {
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0px;
-  line-height: 16px;
-  text-align: left;
-}
-
-.body-md-medium {
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: -0.25px;
-  line-height: 16px;
-  text-align: left;
-}
-
-.body-md-semibold {
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: -0.25px;
-  line-height: 24px;
-  text-align: left;
-}
-
-.txt-btn {
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0.2px;
-  line-height: 24px;
-  text-align: left;
-}
-
-.overline {
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0.2px;
-  line-height: 24px;
-  text-align: left;
-}
-
-.overline-bold {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  line-height: 16px;
-  text-align: left;
-}
-
-.link {
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0px;
-  line-height: 16px;
-  text-align: left;
 }
 
 .input {
@@ -225,6 +373,13 @@ h6 {
 .button.button-primary:active, .button.button-primary-export:active, .button.button-outline-primary:active {
   background-color: #3e4daa;
 }
+.button.button-default {
+  background-color: #adadb2;
+  box-shadow: #adadb2;
+}
+.button.button-default:hover {
+  background-color: #5168f4;
+}
 .button.button-outline-primary, .button.button-primary-export.btn-loading {
   background-color: #fafafa;
   border: solid 1.5px;
@@ -256,6 +411,58 @@ h6 {
   display: none;
   height: 20px;
   width: 20px;
+}
+
+.header {
+  background-image: linear-gradient(#fafbff, 50%, rgba(0, 0, 0, 0));
+  min-height: 100vh;
+}
+.header .header-info {
+  max-width: 470px;
+  width: 100%;
+}
+
+.main {
+  min-height: 100vh;
+  padding-top: 110px;
+}
+.main .form-container {
+  margin-left: 113px;
+  max-width: 350px;
+}
+.main .form-logo-toodoo {
+  margin-bottom: 107px;
+}
+.main .form-check span {
+  cursor: pointer;
+}
+.main .form-check .input-box {
+  border: solid 2px;
+  display: block;
+  height: 15px;
+  transition: 0.3s;
+  width: 15px;
+}
+.main .form-check .input-box {
+  background-image: url("/public/img/svg/check.svg");
+  background-position-y: 5px;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: 50%;
+}
+.main .form-check input:checked + label .input-box {
+  border: none;
+}
+.main button[type=submit] {
+  margin-bottom: 107px;
+}
+
+.modal-dialog {
+  display: flex;
+  height: 100vh;
+}
+.modal-dialog .modal-content {
+  margin: auto;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,160 @@
+.input {
+  border-radius: 5px;
+  border: solid 1.5px map-get($map: $color-gray, $key: "gray-200");
+  color: $txt-color-dark;
+  font-size: 14px;
+  font-weight: 400;
+  height: 48px;
+  letter-spacing: 0px;
+  line-height: 16px;
+  padding: 16px;
+  transition: 0.3s;
+
+  width: 350px;
+  &.input-disabled {
+    background-color: map-get($map: $color-gray, $key: "gray-100");
+    border-color: map-get($map: $color-gray, $key: "gray-200");
+  }
+  &.input-validate {
+    & + .clue {
+      height: fit-content;
+    }
+    &:invalid {
+      border-color: map-get($map: $color-alert, $key: "alert-error");
+      & + .clue {
+        color: map-get($map: $color-alert, $key: "alert-error");
+      }
+    }
+    &:valid {
+      border-color: map-get($map: $color-alert, $key: "alert-sucess");
+    }
+  }
+
+  &.icon-user {
+    display: block;
+    position: relative;
+    &::after {
+      content: "oie";
+    }
+  }
+
+  &:hover {
+    border-color: map-get($map: $color-gray, $key: "gray-300");
+  }
+
+  &:focus {
+    border-color: map-get($map: $color-primary, $key: "primary-400");
+    outline: none !important;
+    &:invalid {
+      + .clue {
+        height: fit-content;
+        opacity: 1;
+      }
+    }
+  }
+
+  &::placeholder,
+  .input-placeholder {
+    color: map-get($map: $color-gray, $key: "gray-300");
+    opacity: 1;
+  }
+}
+
+.input-label {
+  color: map-get($map: $color-gray, $key: "gray-500");
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  line-height: 16px;
+}
+
+.input-icon {
+  position: absolute;
+  right: 17px;
+  top: 38px;
+}
+
+.clue {
+  color: map-get($map: $color-gray, $key: "gray-400");
+  font-size: 11px;
+  font-weight: 500;
+  height: 0;
+  letter-spacing: -0.25px;
+  line-height: 16px;
+  opacity: 0;
+  overflow: hidden;
+  transition: 0.6s;
+}
+
+.button {
+  border-radius: 5px;
+  border: none;
+  font-family: $font-roboto;
+  height: fit-content;
+  min-width: 350px;
+  padding: 16px;
+  transition: 0.3s;
+
+  &.button-primary {
+    background-color: map-get($map: $color-primary, $key: "primary-400");
+    box-shadow: map-get($map: $color-primary, $key: "primary-400");
+    color: $txt-color-light;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0em;
+    &:hover {
+      background-color: map-get($map: $color-primary, $key: "primary-300");
+    }
+    &:active {
+      background-color: map-get($map: $color-primary, $key: "primary-500");
+    }
+  }
+
+  &.button-default {
+    background-color: map-get($map: $color-gray, $key: "gray-300");
+    box-shadow: map-get($map: $color-gray, $key: "gray-300");
+    &:hover {
+      background-color: map-get($map: $color-primary, $key: "primary-400");
+    }
+  }
+
+  &.button-outline-primary {
+    @extend .button-primary;
+    background-color: #fafafa;
+    border: solid 1.5px;
+    color: map-get($map: $color-primary, $key: "primary-400");
+    &:hover {
+      background-color: #fafafa;
+      color: map-get($map: $color-primary, $key: "primary-300");
+    }
+    &:active {
+      color: map-get($map: $color-primary, $key: "primary-500");
+    }
+  }
+  &.button-primary-export {
+    @extend .button-primary;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+    justify-content: center;
+    min-width: 160px;
+    &.btn-loading {
+      @extend .button-outline-primary;
+    }
+  }
+  &.btn-loading {
+    & .btn-txt {
+      display: none;
+    }
+    & .spinner-border-md {
+      display: block;
+    }
+  }
+  & .spinner-border-md {
+    border-width: 2.5px;
+    display: none;
+    height: 20px;
+    width: 20px;
+  }
+}

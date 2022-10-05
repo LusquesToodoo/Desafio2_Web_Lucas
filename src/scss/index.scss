@@ -1,0 +1,68 @@
+.header {
+  background-image: linear-gradient(#fafbff, 50%, #0000);
+  min-height: 100vh;
+  & .header-info {
+    max-width: 470px;
+    width: 100%;
+  }
+}
+
+.main {
+  min-height: 100vh;
+  padding-top: 110px;
+
+  & .form-container {
+    margin-left: 113px;
+    max-width: 350px;
+  }
+  & .form-logo-toodoo {
+    margin-bottom: 107px;
+  }
+  & .form-check {
+    & span {
+      cursor: pointer;
+    }
+    & .input-box {
+      @extend .text-gray-200;
+      border: solid 2px;
+      display: block;
+      height: 15px;
+      transition: 0.3s;
+      width: 15px;
+    }
+    & .input-box {
+      background-image: url("/public/img/svg/check.svg");
+      background-position-y: 5px;
+      background-position-x: center;
+      background-repeat: no-repeat;
+      background-size: 50%;
+    }
+    & input:checked + label .input-box {
+      @extend .bg-primary-400;
+      @extend .text-primary-400;
+      border: none;
+    }
+  }
+  & a.text-body-md {
+    &:hover {
+      @extend .text-gray-400;
+    }
+  }
+  & button[type="submit"] {
+    margin-bottom: 107px;
+  }
+}
+
+.modal-dialog {
+  display: flex;
+  height: 100vh;
+  & .modal-content{
+    margin: auto;
+  }
+}
+
+// @mixin media($width) {
+//   @media screen and(max-width: $width) {
+//     @content;
+//   }
+// }
